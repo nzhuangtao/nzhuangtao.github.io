@@ -1,0 +1,99 @@
+.avatar{
+    margin: 10px 0;
+    width: 120px;
+    height: 120px;
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+a{
+    color: #e63d90;
+}
+.author_name{
+    padding: 4px;
+    width: 100px;
+    background-color: #fff;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    border-left: 20px solid #aaa;
+}
+.panel{
+    margin-top: 30px;
+    width: 100%;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: rgba(255,255,255,.6);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+}
+.item{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.label{
+    position: relative;
+    margin-right: 30px;
+    width: 100px;
+    text-align: justify;
+    text-align-last: justify;
+}
+
+.content{
+    padding: 5px 0;
+    width: 200px;
+    border-bottom: 1px solid #ccc;
+}
+.panel-title{
+    text-align: center;
+    font-size: 24px;
+}
+.desc{
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+.sub_title{
+    margin: 30px 0;
+    font-size: 24px;
+    color: #444;
+}
+.game_list{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.game_item{
+    float: left;
+    margin: 0 10px;
+    width: calc(50% - 40px);
+    height: 400px;
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #fff;
+    border: 2px solid #eee;
+    border-top: 4px solid #e63d90;
+    border-bottom: 4px solid #e63d90;
+    word-wrap: break-word;
+    box-sizing: border-box;
+}
+.thumb{
+    width: 100%;
+}
+@media screen and (max-width: 770px){
+    .game_item{
+        width: 100%;
+        height: auto;
+    }
+}
+.game_name{
+    margin: 10px 0;
+    color: #e63d90;
+    font-size: 20px;
+}
+.game_desc{
+    font-size: 14px;
+}
+.exp{
+    width: 100%;
+    line-height: 2;
+}

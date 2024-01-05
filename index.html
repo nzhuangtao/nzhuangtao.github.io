@@ -1,32 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>魔女的森林小屋</title>
     <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
-    <section class="container">
-        <div class="avatar_box">
-            <img src="./images/avatar.jpg" class="avatar"/>
-        </div>
-        <div class="author_name">
-            nzhuangtao
+    <section class="stage stage-1">
+        <div class="page_loading">
+            <div>
+                <span>魔</span>
+            </div>
+            <div>
+                <span>女</span>
+            </div>
+            <div>
+                <span>的</span>
+            </div>
+            <div>
+                <span>森</span>
+            </div>
+            <div>
+                <span>林</span>
+            </div>
+            <div>
+                <span>小</span>
+            </div>
+            <div>
+                <span id="end-1">屋</span>
+            </div>
         </div>
     </section>
-    <section class="container">
-        <div class="panel">
+    <!-- <section class="stage stage-2">
+        <div class="page_loaded">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section> -->
+
+    <section class="stage stage-3">
+        <div class="page_effect">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+    <!-- <section class="stage stage-4">
+        <div class="motion-4">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </section> -->
+
+    <main style="padding: 10px">
+        <section class="container">
+            <div class="title">
+                <h1>魔女的梳妆台</h1>
+                <p class="title_line"></p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="avatar_box">
+                <img src="./images/avatar.jpg" class="avatar" />
+            </div>
+            <div class="author_name">
+                nzhuangtao
+            </div>
+        </section>
+        <section class="container">
+            <div class="panel">
+                <p class="desc">
+                    我是nzhuangtao，来自广东，是一名前端开发者，喜欢一切美丽的事物，有代码洁癖，工作中热衷于用最精简的代码实现最多的功能，
+                    与大多数开发不一样，我更喜欢原生技术，不喜各类框架。业余热爱游戏，喜欢收集各类橡皮。
+                </p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="sub_title">基本信息</div>
             <ul class="list">
                 <li class="item">
-                    <span class="label">邮箱</span>
-                    <span class="content">
-                        <a href="/views/blog.html">1972449982@qq.com</a>
-                    </span>
-                </li>
-                <li class="item">
-                    <span class="label">微信</span>
-                    <span class="content"></span>
+                    <span class="label">工作</span>
+                    <span class="content">前端开发</span>
                 </li>
                 <li class="item">
                     <span class="label">毕业院校</span>
@@ -36,8 +97,70 @@
                     <span class="label">专业</span>
                     <span class="content">网络工程</span>
                 </li>
+                <li class="item">
+                    <span class="label">擅长的技术</span>
+                    <span class="content">animate.js</span>
+                </li>
+                <li class="item">
+                    <span class="label">特点</span>
+                    <span class="content">挑食</span>
+                </li>
             </ul>
-        </div>
-    </section>
+        </section>
+        <section class="container">
+            <div class="sub_title">工作履历</div>
+            <div class="exp">
+                公司网站：<a href="">https://www.water520.com/</a>
+                <p>
+                    目前正在一家家电公司担任前端开发，主要负责前端安全与体验优化工作，
+                    主要使用到的技术有vue2.x,echarts,animate.js,pixi.js。
+                </p>
+            </div>
+        </section>
+        <section class="container">
+            <div class="sub_title">业余学习</div>
+            <p class="exp">
+                业余时间主要学习的还是css动画的设计与实现，比起功能复杂使用各种
+                高大上的技术，我更喜欢美观，提升体验上的技术。除此之外还在学习制作
+                游戏的技术，例如unreal,cocos。
+            </p>
+        </section>
+        <section class="container">
+            <div class="sub_title">热爱的游戏</div>
+            <ul class="game_list">
+                <li class="game_item">
+                    <img src="./images/pokemon_thumb.jpg" alt="" class="thumb">
+                    <div class="game_name">宝可梦系列</div>
+                    <p class="game_desc">
+                        虽然ns两代作品的质量都让我很不满意，
+                        尤其是剑盾开始全图鉴成为过去，对我这种
+                        收集党很不友好，最喜欢的mega系统估计在
+                        6代复刻前也不会再有了，但宝可梦毕竟是
+                        宝可梦，骂完后还是要真香。
+                    </p>
+                </li>
+                <li class="game_item">
+                    <img src="./images/hero_thumb.jpg" alt="" class="thumb">
+                    <div class="game_name">异度之刃2</div>
+                    <div class="game_desc">
+                        没玩过1，比起3我更喜欢2，当年被群友安利，因前期慢热
+                        一度曾想放弃，群友的疯狂夸赞成为了我玩下去的动力，到最后
+                        开始成迷。剧情很普通的王道剧情，主角拯救世界，但起起伏伏
+                        让我感到心潮澎湃。
+                    </div>
+                </li>
+                <li class="game_item">
+                    <img src="./images/thumb.png" alt="" class="thumb">
+                    <div class="game_name">test test</div>
+                    <div class="game_desc">test </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer></footer>
+    <script>
+        
+    </script>
 </body>
+
 </html>
