@@ -1,0 +1,55 @@
+.wrapper{
+    display: flex;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.main{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.canvas_box{
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+    border-radius: 14px;
+    overflow: hidden;
+}
+.control{
+    margin: 30px 0;
+}
+.shaymin_btn{
+    width: 160px;
+    height: 36px;
+    background-color: #FFFCF5;
+    color: #4b4b4b;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 3px rgba(0,0,0,.3);
+}
+.shaymin_btn:active{
+    transform: scale(0.8);
+}
+.menu{
+    width: 400px;
+}
+
+.shaymin_list{
+    list-style-type: none;
+}
+.shaymin_list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    transition:  background-color 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.shaymin_list li:hover{
+    background-color: #ccc;
+}

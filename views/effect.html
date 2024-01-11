@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/effect.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="main">
+            <div class="canvas_box">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div class="control">
+                <button class="shaymin_btn play">播放</button>
+                <button class="shaymin_btn pause">暂停</button>
+                <button class="shaymin_btn resume">重播</button>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="shaymin_list">
+                <li index="0">向上镭射</li>
+                <li index="1">向下镭射</li>
+                <li index="2">向左镭射</li>
+                <li index="3">向右镭射</li>
+            </ul>
+            <ul class="shaymin_list">
+                <li index="4">向上堆积</li>
+                <li index="5">向下堆积</li>
+                <li index="6">向左堆积</li>
+                <li index="7">向右堆积</li>
+            </ul>
+            <ul class="shaymin_list">
+                <li index="8">向下展开</li>
+                <li index="9">向上展开</li>
+                <li index="10">水平百叶窗</li>
+                <li index="11">垂直百叶窗</li>
+                <li index="12">变焦全屏</li>
+                <li index="13">滚轮</li>
+                <li index="14">上下齿合</li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/ease.js"></script>
+    <script src="../js/effect.js">
+
+    </script>
+    <script>
+        let menu = [
+            "topLaser",
+            "bottomLaser",
+            "leftLaser",
+            "rightLaser",
+            "stackInTop",
+            "stackInBottom",
+            "stackInLeft",
+            "stackInRight",
+            "h_uncover",
+            "v_uncover",
+            "h_shutter",
+            "v_shutter",
+            "zoomFullScreen",
+            "wheel",
+            "tooch"
+        ]
+        // let upload = document.querySelector('.upload');
+        let play = document.querySelector('.play');
+        let pause = document.querySelector('.pause');
+        let resume = document.querySelector('.resume');
+        let menuItems = document.querySelectorAll('.shaymin_list>li');
+    
+        for (let i = 0; i < menuItems.length; i++) {
+            let menuItem = menuItems[i];
+            menuItem.addEventListener('click',function(e){
+                e.stopPropagation();
+                let index = e.target.getAttribute("index");
+                effect.toggleAnimation(menu[index]);     
+            })
+        }
+        let canvas = document.querySelector('#canvas');
+        let effect = new Effect({});
+        effect.init();
+        play.addEventListener('click', function () {
+            effect.play();
+        })
+        pause.addEventListener('click', function () {
+            effect.pause();
+        })
+        resume.addEventListener('click', function () {
+            effect.resume();
+        })
+    </script>
+</body>
+
+</html>
